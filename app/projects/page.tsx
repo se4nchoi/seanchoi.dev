@@ -13,11 +13,12 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Showcase your projects with a hero image (16 x 9)
+            A line on the resume is not enough to describe the projects I have worked on. Here are
+            my detailed recall.
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
+          <div className="-m-4 flex flex-wrap justify-center">
             {projectsData.map((d) => (
               <Card
                 key={d.title}

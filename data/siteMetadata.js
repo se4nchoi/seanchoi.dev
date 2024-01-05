@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'seanchoi.dev',
   author: 'Sean Choi',
   headerTitle: '',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'A place to peek into my thoughts, track record, and life.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://seanchoi.dev',
@@ -16,7 +16,7 @@ const siteMetadata = {
   twitter: 'https://twitter.com',
   facebook: 'https://facebook.com/yehyun.choi',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com/se4nchoi',
+  linkedin: 'https://www.linkedin.com/in/se4nchoi/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -47,30 +47,42 @@ const siteMetadata = {
     // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
-    giscusConfig: {
+    provider: 'utternaces', // supported providers: giscus, utterances, disqus
+    utterancesConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
-      // https://giscus.app/
-      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
-      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
-      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
-      categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'pathname', // supported options: pathname, url, title
-      reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
-      // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
-      metadata: '0',
-      // theme example: light, dark, dark_dimmed, dark_high_contrast
-      // transparent_dark, preferred_color_scheme, custom
-      theme: 'light',
+      // https://utteranc.es/
+      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO,
+      issueTerm: 'pathname', // supported options: pathname, url, title
+      label: 'comment',
+      // theme example: github-light, github-dark, preferred-color-scheme
+      // github-dark-orange, icy-dark, dark-blue, photon-dark, boxy-light
+      theme: 'preferred-color-scheme',
       // theme when dark mode
-      darkTheme: 'transparent_dark',
-      // If the theme option above is set to 'custom`
-      // please provide a link below to your custom theme css file.
-      // example: https://giscus.app/themes/custom_example.css
-      themeURL: '',
-      // This corresponds to the `data-lang="en"` in giscus's configurations
-      lang: 'en',
+      darkTheme: 'dark-blue',
     },
+    // giscusConfig: {
+    //   // Visit the link below, and follow the steps in the 'configuration' section
+    //   // https://giscus.app/
+    //   repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
+    //   repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
+    //   category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
+    //   categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
+    //   mapping: 'pathname', // supported options: pathname, url, title
+    //   reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
+    //   // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
+    //   metadata: '0',
+    //   // theme example: light, dark, dark_dimmed, dark_high_contrast
+    //   // transparent_dark, preferred_color_scheme, custom
+    //   theme: 'light',
+    //   // theme when dark mode
+    //   darkTheme: 'transparent_dark',
+    //   // If the theme option above is set to 'custom`
+    //   // please provide a link below to your custom theme css file.
+    //   // example: https://giscus.app/themes/custom_example.css
+    //   themeURL: '',
+    //   // This corresponds to the `data-lang="en"` in giscus's configurations
+    //   lang: 'en',
+    // },
   },
   search: {
     provider: 'kbar', // kbar or algolia
