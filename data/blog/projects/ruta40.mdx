@@ -1,0 +1,58 @@
+---
+title: 'RUTA40'
+date: '2024-01-04'
+tags: ['projects', 'careers']
+draft: false
+summary: A react web app for users of RUTA40 EV camping vans. Highlight features were Login and authentication through SMS, open/close doors within app, and display of various EV-related data (including battery status, compatible charging station locations).
+---
+
+# RUTA40
+
+RUTA40 was an electric camping van project for EMG Global, 
+just starting out as I joined. The project became an ongoing effort within the company
+throughout the 1 year I was at EMG Global which had a blast of a take-off to become a
+major hit in the Korean camping car market.
+
+<img
+  class="rounded-xl"
+  src={"/static/images/projects/ruta40-project-banner.png"} alt="ruta40 logo" 
+/>
+
+Some highlight work I did for this project was to create interative versions of its website,
+and a React web app & Android app for users of the RUTA40 camping vans where I had great fun
+bringing everything I knew together to create it.
+
+## Tech Stack
+
+The initial web app was built with:
+- `React.js` for frontend
+- `Spring Boot` for backend
+- `PostgreSQL` for database
+
+Where this presentation layer was connected to an Android WebView application for easier 
+access to the users (later connected to an iOS app as well later down the road).
+
+Also of interesting note was all the pipelines that were needed for vehicle-to-server communication!
+As complex as they were, the data (CAN protocol battery data, module-to-server communication, etc.) was 
+processed by other senior team members to be delivered to the frontend in a abstracted fashion. 
+The refresh and display of all those data was also fun to work with. 
+
+## Background
+
+EMG Global is a startup company that was founded from a research lab of a parent company.
+
+In the global movement to reduce carbon emission, Korea was also taking part by providing subsidies
+to electric vehicles. In a complicated history with another company, EMG Global's parent company
+had purchased some 80 electric vans at a discount.
+
+Different ideas were being thrown around to figure out what to do with these vans, and a camping van 
+idea sparked the floor. As a test run, we put in engineers to start converting one van to see 
+if it was going to be feasible. By the end of the month, 20 vans were being primed for their new
+life as camping vans.
+
+## The Technical Problems
+
+Aside from the mechanical, electrical, and other engineering problems, my team faced problems from how
+non-modern the vehicle was. The pre-installed infotainment system and interface was very outdated,
+and it was difficult to harness the data from the vehicle (had to learn by trial and error).
+
